@@ -1,0 +1,58 @@
+/*==============  LAYOUT  ==============*/
+
+body
+    &.darker
+        &::after
+            content: ""
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            width: 100vw
+            height: 100vh
+            background-color: rgba(0,0,0,.2)
+            opacity: 0
+            transition: opacity .2s
+            z-index: 99
+    &.darker_visible
+        &::after
+            opacity: 0
+        +mq-mf(md)
+            &::after
+                opacity: 1
+
+.site
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.site-primary
+    flex: 1 0 auto
+    display: flex
+
+.site-wrapper
+    display: flex
+    width: 100%
+    height: 100%
+    max-width: 1920px
+    margin-left: auto
+    margin-right: auto
+
+.container
+    padding-left: 5%
+    padding-right: 5%
+    +mq-mf(lg)
+        padding-left: 15px
+        padding-right: 15px
+
+.aside
+    width: 20%
+    min-width: 270px
+    +mq-mf(xl)
+        min-width: 300px
+
+// .site-col-
+//     &left
+//         background-color: blue
+//     &right
+//         background-color: green

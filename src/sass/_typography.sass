@@ -1,0 +1,172 @@
+/*==============  Typography  ==============*/
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 700
+    margin-bottom: 0
+    font-family: $font-alternate
+    line-height: 1.2
+    letter-spacing: -.3px
+    &+p,
+    &+blockquote,
+    &+ul,
+    &+ol
+        margin-top: 20px
+
+h1
+    font-weight: 800
+    +fz(28)
+    letter-spacing: -1.3px
+    +mq-mf(sm)
+        +fz(36)
+    +mq-mf(lg)
+        +fz(40)
+        line-height: 1.1
+    +mq-mf(xl)
+        +fz(45)
+
+h2
+    +fz(26)
+    +mq-mf(lg)
+        +fz(29)
+    +mq-mf(xl)
+        +fz(32)
+
+h3
+    +fz(18)
+    +mq-mf(sm)
+        +fz(21)
+    +mq-mf(lg)
+        +fz(23)
+    +mq-mf(xl)
+        +fz(26)
+
+h4
+    +fz(16)
+    +mq-mf(sm)
+        +fz(18)
+    +mq-mf(lg)
+        +fz(20)
+    +mq-mf(xl)
+        +fz(22)
+
+h5
+    +fz(13)
+    +mq-mf(sm)
+        +fz(14)
+    +mq-mf(lg)
+        +fz(16)
+    +mq-mf(xl)
+        +fz(18)
+
+h6
+    +fz(10)
+    +mq-mf(sm)
+        +fz(12)
+    +mq-mf(lg)
+        +fz(14)
+    +mq-mf(xl)
+        +fz(16)
+
+p
+    margin-bottom: 0
+    &+h1,
+    &+h2,
+    &+h3,
+    &+h4,
+    &+h5,
+    &+h6
+        margin-top: 20px
+    &+p,
+    &+blockquote,
+    &+ul,
+    &+ol
+        margin-top: 15px
+
+blockquote
+    padding-left: 20px
+    position: relative
+    +fz(16)
+    cite
+        +fz(14)
+        font-style: normal
+        font-weight: 700
+        +mq-mf(lg)
+            +fz(16)
+    &::before
+        content: ""
+        display: block
+        position: absolute
+        top: 9px
+        left: 0
+        bottom: 7px
+        width: 1px
+        background-color: $color-accent
+    +mq-mf(lg)
+        +fz(18)
+    +mq-mf(xl)
+        +fz(20)
+    &+h1,
+    &+h2,
+    &+h3,
+    &+h4,
+    &+h5,
+    &+h6
+        margin-top: 20px
+    &+p,
+    &+blockquote,
+    &+ul,
+    &+ol
+        margin-top: 15px
+
+ul
+    padding-left: 1em
+    list-style: none
+    margin-bottom: 0
+    li
+        position: relative
+        &::before
+            content: "•"
+            display: inline-block
+            position: absolute
+            color: inherit
+            left: -1em
+            font-weight: 700
+    &.unstyled
+        padding: 0
+        li
+            margin: 0
+            &::before
+                content: none
+    &+h1,
+    &+h2,
+    &+h3,
+    &+h4,
+    &+h5,
+    &+h6,
+    &+p,
+    &+ul,
+    &+ol
+        margin-top: 15px
+
+ol
+    padding-left: 1em
+    margin-bottom: 0
+    &+h1,
+    &+h2,
+    &+h3,
+    &+h4,
+    &+h5,
+    &+h6,
+    &+p,
+    &+ul,
+    &+ol
+        margin-top: 15px
+
+a
+    color: $color-link
+    border-bottom: 1px solid #f1f1f1
+    transition: color .2s, border-color .2s
+    &:hover
+        color: $color-link
+        text-decoration: none
+        border-bottom: 1px solid $color-accent

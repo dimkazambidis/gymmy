@@ -1,0 +1,104 @@
+/*==============  POST  ==============*/
+
+.article
+    padding-top: 20px
+    +mq-mf(md)
+        padding-top: 30px
+    img
+        max-width: 100%
+    &-info
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        margin-top: 25px
+    &-credits
+        display: flex
+        flex-wrap: wrap
+        flex-basis: 0
+        flex-grow: 1
+        width: 100%
+        max-width: 100%
+        font-family: $font-alternate
+        align-items: flex-end
+    &__autor
+        flex: 0 0 100%
+        width: 100%
+        max-width: 100%
+        +fz(14)
+        font-weight: 700
+        a
+            color: #000
+            border-bottom: none
+            &:hover
+                color: $color-link
+        +mq-mf(md)
+            flex: 0 0 auto
+            width: auto
+            max-width: none
+        +mq-mf(lg)
+            +fz(16)
+        +mq-mf(xl)
+            +fz(18)
+    &__autor-meta
+        +fz(14)
+        +mq-mf(md)
+            margin-left: 10px
+        +mq-mf(lg)
+            margin-left: 15px
+            +fz(16)
+        a
+            color: $color-text-gray
+            border-bottom: none
+            &:hover
+                color: $color-accent
+    &__date
+        position: relative
+        flex-wrap: wrap
+        flex-basis: 0
+        flex-grow: 1
+        width: 100%
+        max-width: 100%
+        margin-left: 20px
+        +fz(14)
+        +mq-mf(lg)
+            margin-left: 30px
+            +fz(16)
+        color: $color-text-gray
+        &::before
+            content: "/"
+            display: block
+            position: absolute
+            top: 0
+            left: -12px
+            +mq-mf(lg)
+                left: -17px
+            color: $color-accent
+    &__to-comments
+        flex: 0 0 auto
+        width: auto
+        max-width: none
+        +fz(14)
+        color: $color-text-gray
+    &-img
+        margin-top: 25px
+        figure
+           figcaption
+               margin-top: 15px
+               +fz(14)
+               a
+                   border-bottom: 1px solid transparent
+                   &:hover
+                       border-bottom: 1px solid $color-accent
+               +mq-mf(lg)
+                    +fz(16)
+    &-content
+        padding-top: 15px
+        padding-bottom: 35px
+        img
+            display: block
+            max-width: 100%
+            &+*
+                margin-top: 25px
+        *
+            &+img
+                margin-top: 25px

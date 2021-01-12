@@ -1,0 +1,59 @@
+/*===============  BASE  ===============*/
+
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    &:before, &:after
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+
+*::-webkit-input-placeholder
+    color: $color-placeholder
+    opacity: 1
+
+*:-moz-placeholder
+    color: $color-placeholder
+    opacity: 1
+
+*::-moz-placeholder
+    color: $color-placeholder
+    opacity: 1
+
+*:-ms-input-placeholder
+    color: $color-placeholder
+    opacity: 1
+
+html
+    font-size: $fz-base + px
+    line-height: $lh-base
+    height: 100%
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: $color-danger
+body input:required:valid,
+body textarea:required:valid
+    color: $color-success
+
+body
+    min-width: 320px
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 100%
+    font-family: $font-default
+    overflow-x: hidden
+    color: $color-text
+    font-size: 1.6rem
+    line-height: $lh-base
+    letter-spacing: -.1px
+    +mq-mf(sm)
+        font-size: 1.8rem
+    +mq-mf(md)
+        font-size: 1.8rem
+    +mq-mf(lg)
+        font-size: 2rem
+    +mq-mf(xl)
+        font-size: 2.2rem

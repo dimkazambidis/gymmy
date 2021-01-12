@@ -1,0 +1,100 @@
+/*==============  LEFT SIDEBAR  ==============*/
+
+.aside-left
+    display: none
+    position: fixed
+    top: 0
+    left: 120%
+    width: 100%
+    height: 100vh
+    background-color: $color-accent
+    transition: left .4s
+    z-index: 101
+    +mq-mf(md)
+        width: 300px
+        background-color: #fff
+    +mq-mf(lg)
+        display: block
+        position: relative
+        left: auto
+        width: 20%
+        height: 100%
+        min-width: 270px
+    +mq-mf(xl)
+        min-width: 300px
+    &-wrapper
+        width: 100%
+        padding: 70px 5% 30px
+        +mq-mf(md)
+            padding: 50px 20px 30px
+        +mq-mf(lg)
+            position: sticky
+            top: 0
+            padding: 30px 20px 30px
+    &__logo
+        position: relative
+        // padding-bottom: 25px
+        font-family: $font-alternate
+        font-weight: 800
+        +fz(40)
+        line-height: 1.1
+        letter-spacing: -1.3px
+        color: $color-accent
+        +mq-mf(xl)
+            // padding-bottom: 35px
+            +fz(45)
+        small
+            display: block
+            margin-top: 15px
+            +fz(18)
+            font-weight: 700
+            color: $color-accent-alternate
+            +mq-mf(xl)
+                +fz(20)
+
+.site-nav
+    +mq-mf(lg)
+        margin-top: 25px
+    +mq-mf(xl)
+        margin-top: 35px
+    ul
+        li
+            font-family: $font-alternate
+            +fz(22)
+            letter-spacing: -.06em
+            font-weight: 300
+            +mq-mf(md)
+               +fz(20)
+            +mq-mf(lg)
+               +fz(18)
+            +mq-mf(xl)
+               +fz(20)
+            a
+                color: #fff
+                border-bottom: 1px solid transparent 
+                &:hover
+                    //color: $color-accent
+                    //border-bottom: 1px solid $color-accent
+                    border-color: #fff
+                +mq-mf(md)
+                    color: $color-text-gray
+                    &:hover
+                        color: $color-accent
+                        border-color: transparent
+            &.current
+                font-weight: 500
+                a
+                +mq-mf(md)
+                    font-weight: 300
+                    a
+                        color: $color-accent
+            &+li
+                margin-top: 5px
+
+body
+    &.nav-on
+        .aside-left
+            display: block
+            left: 0
+            +mq-mf(md)
+                left: calc(100% - 300px)

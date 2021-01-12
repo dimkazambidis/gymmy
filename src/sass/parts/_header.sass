@@ -1,0 +1,113 @@
+/*==============  HEADER  ==============*/
+
+.site-header-bg
+    position: fixed
+    top: 0
+    width: 100vw
+    height: 70px
+    background-color: #fff
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0)
+    transition: box-shadow .2s
+    z-index: 91
+    +mq-mf(lg)
+        display: none
+    &::before
+        content: ""
+        display: block
+        position: absolute
+        top: 100%
+        left: 5%
+        right: 5%
+        height: 2px
+        background-color: #f1f1f1
+        transition: background-color .2s
+    &.scroll
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12)
+        &::before
+            background-color: transparent
+
+.site-header-mob
+    position: fixed
+    top: 0
+    width: 100vw
+    z-index: 111
+    +mq-mf(lg)
+        display: none
+    &__logo
+        position: relative
+        font-family: $font-alternate
+        font-weight: 800
+        +fz(30)
+        line-height: 1
+        letter-spacing: -1.3px
+        color: $color-accent
+        transition: color .05s
+    &__menu-toggle
+        position: relative
+        width: 30px
+        height: 30px
+        cursor: pointer
+        span
+            display: block
+            position: absolute
+            top: 50%
+            right: 0
+            width: 20px
+            height: 2px
+            margin-top: -1px
+            background-color: $color-accent
+            transition: background-color .05s
+            transition-delay: .2s
+            &::before,
+            &::after
+                content: ""
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 2px
+                background-color: $color-accent
+                transition: background-color .05s
+                transition-delay: .2s
+            &::before
+                margin-top: -6px
+            &::after
+                margin-top: 6px
+    // &.scroll
+    //     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12)
+    //     .site-header-mob-wrapper
+    //         border-width: 0
+
+.site-header-mob-bg
+    position: relative
+    z-index: 101
+
+.site-header-mob-wrapper
+    height: 70px
+    padding-top: 20px
+    padding-bottom: 20px
+    //border-bottom: 2px solid #f1f1f1
+    transition: border-width .2s
+
+body
+    &.nav-on
+        .site-header-mob
+            &__logo
+                color: #fff
+                transition-delay: .2s
+                +mq-mf(md)
+                    color: $color-accent
+            &__menu-toggle
+                span
+                    background-color: #fff
+                    transition-delay: 0s
+                    &::before,
+                    &::after
+                        background-color: #fff
+                        transition-delay: 0s
+                    +mq-mf(md)
+                        background-color: $color-accent
+                        &::before,
+                        &::after
+                            background-color: $color-accent

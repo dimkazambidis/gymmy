@@ -1,0 +1,33 @@
+//==============  FONT FAMILY  ==============//
+$font-default: "Arial", sans-serif //----- Base font
+$font-alternate: "Montserrat", sans-serif //----- Base font (Montserrat / Raleway)
+
+//==============  COLORS  ==============//
+$color-base: #456575       //----- Base color
+$color-accent: #00a562     //----- Accent color
+$color-accent-alternate: #f6a623     //----- Accent color
+$color-placeholder: silver   //----- Placeholders color
+$color-success: green        //----- Success color
+$color-danger: red           //----- Danger color
+$color-text: #000          //----- Standart text color
+$color-text-gray: #777          //----- Standart text color
+$color-link: $color-accent   //----- Links color
+
+//==============  FONT SIZES  ==============//
+$fz-base: 10       //----- Base font size (px)
+$lh-base: 1.77      //----- Base line height
+
+//==============  FONT SIZES VARIABLES  ==============//
+=fz($fz)
+    font-size: $fz/$fz-base + rem
+
+=lh($lh)
+    line-height: $lh/$fz-base
+
+//==============  CUSTOMIZATION BOOTSTRAP GRID  ==============//
+//----- Vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px !default //----- Gutters widths
+$grid-columns: 12 !default        //----- Columns count
+
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 1024px, xl: 1600px) !default     //----- Breakpoints
+$container-max-widths: (sm: 100%, md: 100%, lg: 100%, xl: 1054px) !default //----- Containers widths
