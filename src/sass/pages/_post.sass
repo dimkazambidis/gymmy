@@ -1,9 +1,7 @@
 /*==============  POST  ==============*/
 
 .article
-    padding-top: 20px
-    +mq-mf(md)
-        padding-top: 30px
+    padding-top: 15px
     img
         max-width: 100%
     &-info
@@ -82,15 +80,24 @@
     &-img
         margin-top: 25px
         figure
-           figcaption
-               margin-top: 15px
-               +fz(14)
-               a
-                   border-bottom: 1px solid transparent
-                   &:hover
-                       border-bottom: 1px solid $color-accent
-               +mq-mf(lg)
+            figcaption
+                +fz(14)
+                p
+                    margin-top: 15px
+                    font-style: italic
                     +fz(16)
+                    +mq-mf(lg)
+                        +fz(18)
+                    +mq-mf(xl)
+                        +fz(20)
+                a
+                    border-bottom: 1px solid transparent
+                    &:hover
+                        border-bottom: 1px solid $color-accent
+                +mq-mf(lg)
+                    +fz(16)
+        &__credits
+            margin-top: 15px
     &-content
         padding-top: 15px
         padding-bottom: 35px
@@ -102,3 +109,18 @@
         *
             &+img
                 margin-top: 25px
+
+.article-tags
+    padding-top: 30px
+    padding-bottom: 35px
+    border-top: 1px solid #e1e1e1
+
+.article-tags-list
+    padding-top: 10px
+    +fz(14)
+    +mq-mf(lg)
+        +fz(16)
+    a
+        border-bottom: none
+        display: inline-block
+        margin-right: 1.5em

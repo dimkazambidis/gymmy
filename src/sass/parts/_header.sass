@@ -7,24 +7,27 @@
     height: 70px
     background-color: #fff
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0)
-    transition: box-shadow .2s
+    transition: box-shadow .1s
     z-index: 91
     +mq-mf(lg)
         display: none
-    &::before
-        content: ""
-        display: block
-        position: absolute
-        top: 100%
-        left: 5%
-        right: 5%
-        height: 2px
-        background-color: #f1f1f1
-        transition: background-color .2s
+    // &::before
+    //     content: ""
+    //     display: block
+    //     position: absolute
+    //     top: 100%
+    //     left: 5%
+    //     right: 5%
+    //     height: 2px
+    //     background-color: #f1f1f1
+    //     transition: background-color .2s
+    //     +mq-mf(lg)
+    //         left: 15px
+    //         right: 15px
     &.scroll
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12)
-        &::before
-            background-color: transparent
+        // &::before
+        //     background-color: transparent
 
 .site-header-mob
     position: fixed
@@ -42,6 +45,10 @@
         letter-spacing: -1.3px
         color: $color-accent
         transition: color .05s
+        a
+            border-bottom: none
+            color: $color-accent
+            transition: color .05s
     &__menu-toggle
         position: relative
         width: 30px
@@ -96,8 +103,13 @@ body
             &__logo
                 color: #fff
                 transition-delay: .2s
+                a
+                    transition-delay: .2s
+                    color: #fff
                 +mq-mf(md)
                     color: $color-accent
+                    a
+                        color: $color-accent
             &__menu-toggle
                 span
                     background-color: #fff

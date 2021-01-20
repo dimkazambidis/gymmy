@@ -1,61 +1,104 @@
 /*==============  LEFT SIDEBAR  ==============*/
 
 .aside-left
-    display: none
     position: fixed
     top: 0
     left: 120%
     width: 100%
-    height: 100vh
+    height: 100%
     background-color: $color-accent
     transition: left .4s
     z-index: 101
+    min-height: calc(100vh - 40px)
+    overflow-y: auto
     +mq-mf(md)
         width: 300px
         background-color: #fff
     +mq-mf(lg)
-        display: block
         position: relative
         left: auto
         width: 20%
         height: 100%
         min-width: 270px
-    +mq-mf(xl)
+    +mq-mf(xxl)
         min-width: 300px
-    &-wrapper
-        width: 100%
-        padding: 70px 5% 30px
-        +mq-mf(md)
-            padding: 50px 20px 30px
-        +mq-mf(lg)
-            position: sticky
-            top: 0
-            padding: 30px 20px 30px
-    &__logo
-        position: relative
-        // padding-bottom: 25px
-        font-family: $font-alternate
-        font-weight: 800
-        +fz(40)
-        line-height: 1.1
-        letter-spacing: -1.3px
-        color: $color-accent
-        +mq-mf(xl)
-            // padding-bottom: 35px
-            +fz(45)
-        small
+
+.aside-left-wrapper
+    position: relative
+    width: 100%
+    // min-height: 100%
+    padding: 70px 5% 92px
+    +mq-mf(md)
+        padding: 50px 20px 92px
+    +mq-mf(lg)
+        position: sticky
+        top: 0
+        padding: 30px 20px 30px
+
+.aside-left__logo
+    position: relative
+    // padding-bottom: 25px
+    font-family: $font-alternate
+    font-weight: 800
+    +fz(40)
+    line-height: 1.1
+    letter-spacing: -1.3px
+    color: $color-accent
+    +mq-mf(xxl)
+        // padding-bottom: 35px
+        +fz(45)
+    small
+        display: block
+        margin-top: 15px
+        +fz(18)
+        font-weight: 700
+        color: $color-accent-alternate
+        +mq-mf(xxxl)
+            +fz(20)
+    a
+        border-bottom: none
+
+.aside-left__social
+    border-top: 2px solid $color-hr
+    position: absolute
+    padding: 20px 0 20px
+    left: 5%
+    right: 5%
+    bottom: 0
+    background-color: $color-accent
+    +mq-mf(md)
+        left: 20px
+        right: 20px
+        background-color: #fff
+    a
+        color: $color-text
+        border-bottom: none
+        svg
             display: block
-            margin-top: 15px
-            +fz(18)
-            font-weight: 700
-            color: $color-accent-alternate
-            +mq-mf(xl)
-                +fz(20)
+            height: 20px
+            width: auto
+            color: #fff
+            +mq-mf(md)
+                color: #2BA0D9
+        span
+            +fz(16)
+            line-height: 20px
+            margin-left: 10px
+            color: #fff
+            +mq-mf(md)
+               +fz(16) 
+               color: $color-text-gray
+        &:hover
+            // svg
+            //     color: #2BA0D9
+            span
+                text-decoration: underline
 
 .site-nav
+    max-height: 
     +mq-mf(lg)
         margin-top: 25px
-    +mq-mf(xl)
+    +mq-mf(xxxl)
         margin-top: 35px
     ul
         li
@@ -67,7 +110,7 @@
                +fz(20)
             +mq-mf(lg)
                +fz(18)
-            +mq-mf(xl)
+            +mq-mf(xxl)
                +fz(20)
             a
                 color: #fff

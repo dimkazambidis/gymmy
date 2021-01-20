@@ -2,115 +2,142 @@
 
         <div class="site-primary">
             <div class="site-wrapper">
-                <aside class="aside aside-left">
-                    <div class="aside-left-wrapper">
-                        <div class="aside-left__logo d-none d-lg-block">
-                            GYMMY
-                            <small>Блог о спорте и не только</small>
-                        </div>
+                @include('parts/aside-blog.html')
 
-                        <nav class="site-nav">
-                            <ul class="unstyled">
-                                <li><a href="#">Тренировки</a></li>
-                                <li><a href="#">Спортивное питание</a></li>
-                                <li class="current"><a href="#">Питание</a></li>
-                                <li><a href="#">Мотивация</a></li>
-                                <li><a href="#">Здоровье</a></li>
-                                <li><a href="#">Персональные блоги</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </aside>
                 <main class="site-content">
-                    <div class="container">
-                        <article class="article">
-                            <header class="article-header">
-                                <h1 class="article__title">Организация тренировочного процесса. Часть&nbsp;1. "Переиодизация"</h1>
-                                <div class="article-info">
-                                    <div class="article-credits">
-                                        <div class="article__autor">
-                                            <a href="#" title="Автор">Денис Давыдов</a>
+                    <div class="container-fluid">
+                        <div class="post-list">
+                            <article class="post-list-item post-list-item_featured">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-4 order-2 order-md-1">
+                                        <div class="post-list-item__1rd">
+                                            <h2><a href="post.html">Организация тренировочного процесса. Часть&nbsp;1. "Переиодизация"</a></h2>
+                                            
+                                            <div class="post-list-item__text d-none d-md-block">
+                                                <a href="post.html">Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос.</a>
+                                            </div>
+                                            
+                                            <div class="post-list-item-info">
+                                                <div class="post-list-item-credits">
+                                                    <div class="post-list-item__autor">
+                                                        <a href="#" title="Автор"><strong>Денис Давыдов</strong></a>
+                                                    </div>
+                                                    <time class="post-list-item__date">28 сентября, 2020</time>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="article__autor-meta">
-                                            <a href="https://twitter.com/lucasmtny" title="https://twitter.com/lucasmtny">@chicago</a>
-                                        </div>
-                                        <time class="article__date">28 сентября, 2020</time>
                                     </div>
-                                    <!-- <div class="article__to-comments">Комментарии</div> -->
+                                    <div class="post-list-item__3rd col-12 col-md-8 order-1 order-md-2">
+                                        <div class="post-list-item__3rd">
+                                            <figure>
+                                                <picture>
+                                                    <a href="post.html"><img src="images/img.png" alt="Какое-то описание"></a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
                                 </div>
-                            </header>
+                            </article>
 
-                            <div class="article-img">
-                                <figure>
-                                    <picture>
-                                        <img src="images/img.png" alt="Какое-то описание">
-                                    </picture>
+                            <article class="post-list-item">
+                                <div class="row justify-content-between">
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="post-list-item__1rd col-12 col-md-6">
+                                                <h2><a href="post.html">Организация тренировочного процесса. Часть&nbsp;1. "Переиодизация"</a></h2>
+                                                <div class="post-list-item-info">
+                                                    <div class="post-list-item-credits">
+                                                        <div class="post-list-item__autor">
+                                                            <a href="#" title="Автор"><strong>Денис Давыдов</strong></a>
+                                                        </div>
+                                                        <time class="post-list-item__date">28 сентября, 2020</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-item__2rd col-6 d-none d-md-block">
+                                                <div class="post-list-item__text">
+                                                    <a href="post.html">Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-list-item__3rd col-4">
+                                        <figure>
+                                            <picture>
+                                                <a href="post.html"><img src="images/img.png" alt="Какое-то описание"></a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </article>
 
-                                    <figcaption>
-                                        <strong>Источник фото:</strong> Gage Skidmore / <a href="https://www.flickr.com/" title="https://www.flickr.com/">Flickr</a>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                            <article class="post-list-item">
+                                <div class="row justify-content-between">
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="post-list-item__1rd col-12 col-md-6">
+                                                <h2><a href="post.html">Организация тренировочного процесса. Часть&nbsp;1. "Переиодизация"</a></h2>
+                                                <div class="post-list-item-info">
+                                                    <div class="post-list-item-credits">
+                                                        <div class="post-list-item__autor">
+                                                            <a href="#" title="Автор"><strong>Денис Давыдов</strong></a>
+                                                        </div>
+                                                        <time class="post-list-item__date">28 сентября, 2020</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-item__2rd col-6 d-none d-md-block">
+                                                <div class="post-list-item__text">
+                                                    <a href="post.html">Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-list-item__3rd col-4">
+                                        <figure>
+                                            <picture>
+                                                <a href="post.html"><img src="images/img.png" alt="Какое-то описание"></a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </article>
 
-                            <div class="article-content">
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</p>
-    
-                                <h2>Заголовок 2-го уровня</h2>
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</p>
-                                <blockquote cite="https://ngs.ru/text/gorod/2020/10/06/69494203/">
-                                    <p>Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Выход целевого продукта нуклеофил.</p>
-                                    <footer>— Чёткий Аффтар, <cite>НГС Новосибирск</cite></footer>
-                                </blockquote>
-                                
-                                <h2>Заголовок 2-го уровня</h2>
-                                <img src="images/img.png" alt="Какое-то описание">
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</p>
-                                
-                                <h3>Заголовок 3-го уровня</h3>
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</p>
-        
-                                <h4>Заголовок 4-го уровня</h4>
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</p>
-        
-                                <h5>Заголовок 5-го уровня</h5>
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</p>
-        
-                                <h6>Заголовок 6-го уровня</h6>
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</p>
-        
-                                <p>Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос. Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает <a href="#">квантовый бензол</a> как при возбуждении, так и при релаксации.</p>
-                                
-                                <h2>Стандартный список</h2>
-                                <ul>
-                                    <li><a href="#">Lorem ipsum</a></li>
-                                    <li><a href="#">Lorem ipsum</a></li>
-                                    <li><a href="#">Lorem ipsum</a></li>
-                                    <li><a href="#">Lorem ipsum</a></li>
-                                    <li><a href="#">Lorem ipsum</a></li>
-                                    <li><a href="#">Lorem ipsum</a></li>
-                                </ul>
-
-                                <h2>Нумерованный список</h2>
-                                <ol>
-                                    <li>Выход целевого продукта разъедает реакционный нуклеофил.</li>
-                                    <li>Пластмасса испускает инициированный фотоиндуцированный энергетический перенос.</li>
-                                    <li>Если для простоты пренебречь потерями на теплопроводность, то видно, что продукт реакции захватывает квантовый бензол как при возбуждении, так и при релаксации.</li>
-                                </ol>
-        
-                                <h2>Не стилизованный список (class="unstyled")</h2>
-                                <ul class="unstyled">
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                </ul>
-                            </div>
-                        </article>
+                            <article class="post-list-item">
+                                <div class="row justify-content-between">
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="post-list-item__1rd col-12 col-md-6">
+                                                <h2><a href="post.html">Организация тренировочного процесса. Часть&nbsp;1. "Переиодизация"</a></h2>
+                                                <div class="post-list-item-info">
+                                                    <div class="post-list-item-credits">
+                                                        <div class="post-list-item__autor">
+                                                            <a href="#" title="Автор"><strong>Денис Давыдов</strong></a>
+                                                        </div>
+                                                        <time class="post-list-item__date">28 сентября, 2020</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-item__2rd col-6 d-none d-md-block">
+                                                <div class="post-list-item__text">
+                                                    <a href="post.html">Выход целевого продукта разъедает реакционный нуклеофил. Пластмасса испускает инициированный фотоиндуцированный энергетический перенос.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-list-item__3rd col-4">
+                                        <figure>
+                                            <picture>
+                                                <a href="post.html"><img src="images/img.png" alt="Какое-то описание"></a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </main>
-                <aside class="aside aside-right d-none d-lg-block">222</aside>
+                <aside class="aside aside-right d-none d-xl-block">222</aside>
             </div>
             <!-- <aside class="site-left-col">111</aside>
             <main class="site-content">

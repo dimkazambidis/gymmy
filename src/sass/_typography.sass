@@ -1,18 +1,18 @@
 /*==============  Typography  ==============*/
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
     font-weight: 700
     margin-bottom: 0
     font-family: $font-alternate
     line-height: 1.2
-    letter-spacing: -.3px
+    letter-spacing: -.6px
     &+p,
     &+blockquote,
     &+ul,
     &+ol
         margin-top: 20px
 
-h1
+h1, .h1
     font-weight: 800
     +fz(28)
     letter-spacing: -1.3px
@@ -24,14 +24,14 @@ h1
     +mq-mf(xl)
         +fz(45)
 
-h2
+h2, .h2
     +fz(26)
     +mq-mf(lg)
         +fz(29)
     +mq-mf(xl)
         +fz(32)
 
-h3
+h3, .h3
     +fz(18)
     +mq-mf(sm)
         +fz(21)
@@ -40,7 +40,7 @@ h3
     +mq-mf(xl)
         +fz(26)
 
-h4
+h4, .h4
     +fz(16)
     +mq-mf(sm)
         +fz(18)
@@ -49,7 +49,7 @@ h4
     +mq-mf(xl)
         +fz(22)
 
-h5
+h5, .h5
     +fz(13)
     +mq-mf(sm)
         +fz(14)
@@ -58,7 +58,7 @@ h5
     +mq-mf(xl)
         +fz(18)
 
-h6
+h6, .h6
     +fz(10)
     +mq-mf(sm)
         +fz(12)

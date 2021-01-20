@@ -1,0 +1,74 @@
+/*==============  BLOG  ==============*/
+
+.post-list
+    padding-bottom: 45px
+    +mq-mf(md)
+        padding-bottom: 60px
+    
+.post-list-item
+    font-size: 
+    border-top: 2px solid $color-hr
+    margin-top: 1.425em
+    padding-top: 1.425em
+    figure
+        margin-bottom: 0
+    img
+        max-width: 100%
+    &.post-list-item_featured
+        .post-list-item__1rd
+            margin-top: 15px
+            +mq-mf(md)
+                margin-top: 0
+    >.row
+        transition: opacity .2s ease .1s
+        &:hover
+            opacity: .6
+
+.post-list-item__1rd
+    h2, .h2
+        +fz(18)
+        line-height: 1.09
+        font-weight: 900
+        +mq-mf(sm)
+            +fz(22)
+        +mq-mf(xxl)
+            +fz(29)
+        &+.post-list-item__text
+            margin-top: 15px
+        a
+            color: $color-text
+            text-decoration: none
+            border-bottom: none
+
+.post-list-item-info
+    +fz(13)
+    line-height: 1.5
+    +mq-mf(xxl)
+        +fz(16)
+
+.post-list-item__autor
+    margin-top: 10px
+    a
+        color: $color-text
+        border-bottom: none
+        &:hover
+            color: $color-link
+
+.post-list-item__date
+    color: $color-text-gray
+
+.post-list-item__text
+    // +fz(20)
+    // line-height: 1.43
+    +fz(14)
+    line-height: 1.43
+    color: $color-text-gray
+    +mq-mf(xxl)
+        +fz(20)
+    a
+        color: $color-text-gray
+        border-bottom: none
+        display: block
+    &+.post-list-item-info
+        +mq-mf(md)
+            margin-top: 30px

@@ -38,7 +38,7 @@ body
     margin-left: auto
     margin-right: auto
 
-.container
+.container, .container-fluid
     padding-left: 5%
     padding-right: 5%
     +mq-mf(lg)
@@ -48,11 +48,43 @@ body
 .aside
     width: 20%
     min-width: 270px
-    +mq-mf(xl)
+    +mq-mf(xxxl)
         min-width: 300px
 
-// .site-col-
-//     &left
-//         background-color: blue
-//     &right
-//         background-color: green
+.site-content-header
+    +mq-mf(lg)
+        padding-top: 30px
+
+.site-content-breadcrumbs
+    span
+        display: inline-block
+        color: $color-text-gray
+        +fz(14)
+        a
+            border-bottom: none
+        &::after
+            content: "/"
+            display: inline-block
+            padding: 0 .3em
+        &:last-child
+            &::after
+                content: none
+        +mq-mf(lg)
+            +fz(16)
+    &+.site-content-title
+        margin-top: 15px
+        
+.site-content-title
+    font-weight: 800
+    margin-bottom: 0
+    font-family: $font-alternate
+    line-height: 1.2
+    letter-spacing: -1.3px
+    +fz(30)
+    +mq-mf(sm)
+        +fz(40)
+    +mq-mf(lg)
+        +fz(50)
+    +mq-mf(xxl)
+        +fz(60)
+    

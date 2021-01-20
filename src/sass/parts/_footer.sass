@@ -1,8 +1,44 @@
 /*=============  Footer  =============*/
 .site-footer
     flex: 0 0 auto
-    background-color: $color-base
-    height: 4.5rem
-    color: #fff
-    text-align: center
-    line-height: 4.5rem
+    width: 100%
+    max-width: 1920px
+    margin-left: auto
+    margin-right: auto
+    +mq-mf(lg)
+        padding: 0 0 0 270px
+    +mq-mf(xl)
+        padding: 0 270px
+    +mq-mf(xxl)
+        padding: 0 300px
+
+.site-footer-container
+    border-top: 2px solid $color-hr
+    padding: 20px 0
+
+.site-footer-copyright
+    +fz(14)
+    color: $color-text-gray
+
+.site-footer-social
+    a
+        color: $color-text
+        border-bottom: none
+        svg
+            display: block
+            height: 20px
+            width: auto
+            color: #2BA0D9
+        span
+            +fz(14)
+            line-height: 20px
+            margin-left: 10px
+            color: $color-text-gray
+            +mq-mf(md)
+               +fz(16) 
+        &:hover
+            // svg
+            //     color: #2BA0D9
+            span
+                text-decoration: underline
+            
